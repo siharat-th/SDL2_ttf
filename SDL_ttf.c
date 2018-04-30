@@ -31,8 +31,10 @@
 #include FT_GLYPH_H
 #include FT_TRUETYPE_IDS_H
 
-#include <hb.h>
-#include <hb-ft.h>
+//#include <hb.h>
+//#include <hb-ft.h>
+#include "hb.h"
+#include "hb-ft.h"
 
 #ifdef __cplusplus
 extern "C" {
