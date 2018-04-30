@@ -8,11 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		AA9EE79914B2C589008773C0 /* FreeType.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9EE79814B2C589008773C0 /* FreeType.framework */; };
-		AA9EE79A14B2C593008773C0 /* FreeType.framework in Copy Fframeworks */ = {isa = PBXBuildFile; fileRef = AA9EE79814B2C589008773C0 /* FreeType.framework */; };
+		AA9EE79A14B2C593008773C0 /* FreeType.framework in Copy Fframeworks */ = {isa = PBXBuildFile; fileRef = AA9EE79814B2C589008773C0 /* FreeType.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		BE48FD5F07AFA17000BB41DA /* SDL_ttf.h in Headers */ = {isa = PBXBuildFile; fileRef = 1014BAEA010A4B677F000001 /* SDL_ttf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE48FD6207AFA17000BB41DA /* SDL_ttf.c in Sources */ = {isa = PBXBuildFile; fileRef = F567D67A01CD962A01F3E8B9 /* SDL_ttf.c */; };
 		BE48FD6B07AFA17000BB41DA /* SDL_ttf.c in Sources */ = {isa = PBXBuildFile; fileRef = F567D67A01CD962A01F3E8B9 /* SDL_ttf.c */; };
 		BE48FD8407AFA29000BB41DA /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE48FD8307AFA29000BB41DA /* SDL2.framework */; };
+		FEC5058620974D0200EC1090 /* SDL_ttf.h in Headers */ = {isa = PBXBuildFile; fileRef = 1014BAEA010A4B677F000001 /* SDL_ttf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEC5058C20974DB700EC1090 /* libharfbuzz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC5058820974DB700EC1090 /* libharfbuzz.a */; };
+		FEC5058D20974DB700EC1090 /* libharfbuzz-icu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC5058920974DB700EC1090 /* libharfbuzz-icu.a */; };
+		FEC5058E20974DB700EC1090 /* libharfbuzz-subset.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC5058A20974DB700EC1090 /* libharfbuzz-subset.a */; };
+		FEC5058F20974DB700EC1090 /* libharfbuzz-gobject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC5058B20974DB700EC1090 /* libharfbuzz-gobject.a */; };
+		FEC5059220974EB600EC1090 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC5059020974EB600EC1090 /* libSDL2.a */; };
+		FEC5059320974EB600EC1090 /* libSDL2main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC5059120974EB600EC1090 /* libSDL2main.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		FEC5059420974F8700EC1090 /* libharfbuzz-gobject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC5058B20974DB700EC1090 /* libharfbuzz-gobject.a */; };
+		FEC5059520974F8700EC1090 /* libharfbuzz-icu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC5058920974DB700EC1090 /* libharfbuzz-icu.a */; };
+		FEC5059620974F8700EC1090 /* libharfbuzz-subset.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC5058A20974DB700EC1090 /* libharfbuzz-subset.a */; };
+		FEC5059720974F8700EC1090 /* libharfbuzz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC5058820974DB700EC1090 /* libharfbuzz.a */; };
+		FEC505AA2097563300EC1090 /* libharfbuzz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC505A62097563300EC1090 /* libharfbuzz.dylib */; };
+		FEC505AB2097563300EC1090 /* libharfbuzz-icu.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC505A72097563300EC1090 /* libharfbuzz-icu.dylib */; };
+		FEC505AC2097563300EC1090 /* libharfbuzz-gobject.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC505A82097563300EC1090 /* libharfbuzz-gobject.dylib */; };
+		FEC505AD2097563300EC1090 /* libharfbuzz-subset.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC505A92097563300EC1090 /* libharfbuzz-subset.dylib */; };
+		FEC505AE2097564000EC1090 /* libharfbuzz-gobject.dylib in Copy Fframeworks */ = {isa = PBXBuildFile; fileRef = FEC505A82097563300EC1090 /* libharfbuzz-gobject.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		FEC505AF2097564000EC1090 /* libharfbuzz-icu.dylib in Copy Fframeworks */ = {isa = PBXBuildFile; fileRef = FEC505A72097563300EC1090 /* libharfbuzz-icu.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		FEC505B02097564000EC1090 /* libharfbuzz-subset.dylib in Copy Fframeworks */ = {isa = PBXBuildFile; fileRef = FEC505A92097563300EC1090 /* libharfbuzz-subset.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		FEC505B12097564000EC1090 /* libharfbuzz.dylib in Copy Fframeworks */ = {isa = PBXBuildFile; fileRef = FEC505A62097563300EC1090 /* libharfbuzz.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +51,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FEC505AE2097564000EC1090 /* libharfbuzz-gobject.dylib in Copy Fframeworks */,
+				FEC505AF2097564000EC1090 /* libharfbuzz-icu.dylib in Copy Fframeworks */,
+				FEC505B02097564000EC1090 /* libharfbuzz-subset.dylib in Copy Fframeworks */,
+				FEC505B12097564000EC1090 /* libharfbuzz.dylib in Copy Fframeworks */,
 				AA9EE79A14B2C593008773C0 /* FreeType.framework in Copy Fframeworks */,
 			);
 			name = "Copy Fframeworks";
@@ -44,13 +67,23 @@
 		AA9EE79814B2C589008773C0 /* FreeType.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FreeType.framework; path = Frameworks/FreeType.framework; sourceTree = "<group>"; };
 		BE48FD6607AFA17000BB41DA /* Info-Framework.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Framework.plist"; sourceTree = "<group>"; };
 		BE48FD6707AFA17000BB41DA /* SDL2_ttf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDL2_ttf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE48FD6E07AFA17000BB41DA /* libSDL_ttf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSDL_ttf.a; path = libSDL2_ttf.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE48FD6E07AFA17000BB41DA /* libSDL2_ttf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSDL2_ttf.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE48FD7207AFA17000BB41DA /* Create DMG */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Create DMG"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE48FD8307AFA29000BB41DA /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = /Library/Frameworks/SDL2.framework; sourceTree = "<absolute>"; };
 		F567D67A01CD962A01F3E8B9 /* SDL_ttf.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_ttf.c; path = ../SDL_ttf.c; sourceTree = SOURCE_ROOT; };
 		F59C710300D5CB5801000001 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
 		F59C710400D5CB5801000001 /* Welcome.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = Welcome.txt; sourceTree = "<group>"; };
 		F59C710600D5CB5801000001 /* SDL_ttf.info */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = SDL_ttf.info; sourceTree = "<group>"; };
+		FEC5058820974DB700EC1090 /* libharfbuzz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libharfbuzz.a; path = ../external/harfbuzz/lib/osx/libharfbuzz.a; sourceTree = "<group>"; };
+		FEC5058920974DB700EC1090 /* libharfbuzz-icu.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libharfbuzz-icu.a"; path = "../external/harfbuzz/lib/osx/libharfbuzz-icu.a"; sourceTree = "<group>"; };
+		FEC5058A20974DB700EC1090 /* libharfbuzz-subset.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libharfbuzz-subset.a"; path = "../external/harfbuzz/lib/osx/libharfbuzz-subset.a"; sourceTree = "<group>"; };
+		FEC5058B20974DB700EC1090 /* libharfbuzz-gobject.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libharfbuzz-gobject.a"; path = "../external/harfbuzz/lib/osx/libharfbuzz-gobject.a"; sourceTree = "<group>"; };
+		FEC5059020974EB600EC1090 /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2.a; path = ../external/sdl/lib/osx/libSDL2.a; sourceTree = "<group>"; };
+		FEC5059120974EB600EC1090 /* libSDL2main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2main.a; path = ../external/sdl/lib/osx/libSDL2main.a; sourceTree = "<group>"; };
+		FEC505A62097563300EC1090 /* libharfbuzz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libharfbuzz.dylib; path = ../external/harfbuzz/lib/osx/libharfbuzz.dylib; sourceTree = "<group>"; };
+		FEC505A72097563300EC1090 /* libharfbuzz-icu.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libharfbuzz-icu.dylib"; path = "../external/harfbuzz/lib/osx/libharfbuzz-icu.dylib"; sourceTree = "<group>"; };
+		FEC505A82097563300EC1090 /* libharfbuzz-gobject.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libharfbuzz-gobject.dylib"; path = "../external/harfbuzz/lib/osx/libharfbuzz-gobject.dylib"; sourceTree = "<group>"; };
+		FEC505A92097563300EC1090 /* libharfbuzz-subset.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libharfbuzz-subset.dylib"; path = "../external/harfbuzz/lib/osx/libharfbuzz-subset.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +91,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEC505AD2097563300EC1090 /* libharfbuzz-subset.dylib in Frameworks */,
+				FEC505AC2097563300EC1090 /* libharfbuzz-gobject.dylib in Frameworks */,
+				FEC505AB2097563300EC1090 /* libharfbuzz-icu.dylib in Frameworks */,
+				FEC5059420974F8700EC1090 /* libharfbuzz-gobject.a in Frameworks */,
+				FEC5059520974F8700EC1090 /* libharfbuzz-icu.a in Frameworks */,
+				FEC5059620974F8700EC1090 /* libharfbuzz-subset.a in Frameworks */,
+				FEC5059720974F8700EC1090 /* libharfbuzz.a in Frameworks */,
 				BE48FD8407AFA29000BB41DA /* SDL2.framework in Frameworks */,
+				FEC505AA2097563300EC1090 /* libharfbuzz.dylib in Frameworks */,
 				AA9EE79914B2C589008773C0 /* FreeType.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +108,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEC5059220974EB600EC1090 /* libSDL2.a in Frameworks */,
+				FEC5058E20974DB700EC1090 /* libharfbuzz-subset.a in Frameworks */,
+				FEC5058C20974DB700EC1090 /* libharfbuzz.a in Frameworks */,
+				FEC5058F20974DB700EC1090 /* libharfbuzz-gobject.a in Frameworks */,
+				FEC5058D20974DB700EC1090 /* libharfbuzz-icu.a in Frameworks */,
+				FEC5059320974EB600EC1090 /* libSDL2main.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +133,7 @@
 			children = (
 				089C1665FE841158C02AAC07 /* Resources */,
 				BE48FD6707AFA17000BB41DA /* SDL2_ttf.framework */,
-				BE48FD6E07AFA17000BB41DA /* libSDL_ttf.a */,
+				BE48FD6E07AFA17000BB41DA /* libSDL2_ttf.a */,
 				BE48FD7207AFA17000BB41DA /* Create DMG */,
 			);
 			name = Products;
@@ -95,6 +142,7 @@
 		0867D691FE84028FC02AAC07 /* SDL_ttfFramework */ = {
 			isa = PBXGroup;
 			children = (
+				FEC5058720974D6900EC1090 /* libs */,
 				F59C70FC00D5CB5801000001 /* pkg-support */,
 				0153844A006D81B07F000001 /* Public Headers */,
 				08FB77ACFE841707C02AAC07 /* Library Source */,
@@ -155,6 +203,23 @@
 			path = resources;
 			sourceTree = "<group>";
 		};
+		FEC5058720974D6900EC1090 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				FEC505A82097563300EC1090 /* libharfbuzz-gobject.dylib */,
+				FEC505A72097563300EC1090 /* libharfbuzz-icu.dylib */,
+				FEC505A92097563300EC1090 /* libharfbuzz-subset.dylib */,
+				FEC505A62097563300EC1090 /* libharfbuzz.dylib */,
+				FEC5059020974EB600EC1090 /* libSDL2.a */,
+				FEC5059120974EB600EC1090 /* libSDL2main.a */,
+				FEC5058B20974DB700EC1090 /* libharfbuzz-gobject.a */,
+				FEC5058920974DB700EC1090 /* libharfbuzz-icu.a */,
+				FEC5058A20974DB700EC1090 /* libharfbuzz-subset.a */,
+				FEC5058820974DB700EC1090 /* libharfbuzz.a */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -170,6 +235,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEC5058620974D0200EC1090 /* SDL_ttf.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +283,7 @@
 			name = "Static Library";
 			productInstallPath = /usr/local/lib;
 			productName = "Static Library";
-			productReference = BE48FD6E07AFA17000BB41DA /* libSDL_ttf.a */;
+			productReference = BE48FD6E07AFA17000BB41DA /* libSDL2_ttf.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		BE48FD6F07AFA17000BB41DA /* Create DMG */ = {
@@ -243,7 +309,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 00B7E1F5097E26C600826121 /* Build configuration list for PBXProject "SDL_ttf" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -376,13 +442,16 @@
 		00B7E1EA097E26C600826121 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				DYLIB_COMPATIBILITY_VERSION = 11;
 				DYLIB_CURRENT_VERSION = 11.2;
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "Info-Framework.plist";
 				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libsdl.SDL2-ttf";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -390,13 +459,16 @@
 		00B7E1EB097E26C600826121 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				DYLIB_COMPATIBILITY_VERSION = 11;
 				DYLIB_CURRENT_VERSION = 11.2;
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "Info-Framework.plist";
 				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libsdl.SDL2-ttf";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -404,6 +476,7 @@
 		00B7E1EE097E26C600826121 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				LIBRARY_STYLE = STATIC;
@@ -417,6 +490,7 @@
 		00B7E1EF097E26C600826121 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				LIBRARY_STYLE = STATIC;
@@ -430,6 +504,7 @@
 		00B7E1F2097E26C600826121 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -451,6 +526,7 @@
 		00B7E1F3097E26C600826121 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -469,22 +545,50 @@
 		00B7E1F6097E26C600826121 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED)",
 					"$(HOME)/Library/Frameworks",
 					/Library/Frameworks,
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED = "\"$(SRCROOT)/Frameworks\"";
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(HEADER_SEARCH_PATHS_QUOTED)",
 					"$(HOME)/Library/Frameworks/SDL2.framework/Headers",
 					/Library/Frameworks/SDL2.framework/Headers,
+					../external/harfbuzz/include/harfbuzz,
 				);
 				HEADER_SEARCH_PATHS_QUOTED = "\"$(SRCROOT)/Frameworks/FreeType.framework/Headers\"";
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				LIBRARY_SEARCH_PATHS = ../external/harfbuzz/lib/osx;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = SDL2_ttf;
 				SDKROOT = macosx;
 			};
@@ -493,8 +597,25 @@
 		00B7E1F7097E26C600826121 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED)",
 					"$(HOME)/Library/Frameworks",
@@ -502,14 +623,23 @@
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED = "\"$(SRCROOT)/Frameworks\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(HEADER_SEARCH_PATHS_QUOTED)",
 					"$(HOME)/Library/Frameworks/SDL2.framework/Headers",
 					/Library/Frameworks/SDL2.framework/Headers,
+					../external/harfbuzz/include/harfbuzz,
 				);
 				HEADER_SEARCH_PATHS_QUOTED = "\"$(SRCROOT)/Frameworks/FreeType.framework/Headers\"";
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				LIBRARY_SEARCH_PATHS = ../external/harfbuzz/lib/osx;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = SDL2_ttf;
 				SDKROOT = macosx;
 				SEPARATE_STRIP = YES;
